@@ -1,7 +1,12 @@
-*{
+*, ::after, ::before{
     box-sizing: border-box;
-    margin: 0;
-
+    margin: 0;  
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #384053;
 }
 
 @font-face {
@@ -19,7 +24,7 @@
 }
 
 
-.item-a{
+.left{
     background: url(../img/angled_trans.svg), linear-gradient(to right, #1D58F5, #3B90F7);
     grid-column: 1;
     grid-row: 1/2;
@@ -62,7 +67,7 @@ p{
     font-weight: 400;
 }
 
-.item-b{
+.right{
     grid-column: 2;
     grid-row: auto;
     position: relative;
@@ -70,6 +75,29 @@ p{
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
+    background-color: #F8F9FB;
     
 }
 
+.arrow-logo{
+    display: inline-block;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+
+a.login{
+    color: #0055ff;
+    margin: 0 6px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+img.arrow{
+    width: 30px;
+}
+
+
+.boxes{
+    display: flex;
+}
