@@ -97,7 +97,42 @@ img.arrow{
     width: 30px;
 }
 
+@media (min-width: 991px){
 
 .boxes{
-    display: flex;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+}
+
+.basic-details{
+    padding-left: 80px;
+}
+
+form{
+    display: block;
+    margin-top: 0em;
+}
+
+@media (min-width: 576px){
+    .box{
+        display: flex;
+    }
+}
+
+@media (min-width: 575px){
+    .account-type-container{
+        margin-right: 18px;
+        flex-grow: 1;
+    }
+}
+
+input[type="radio"][contents] {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+    float: left;
+    cursor: pointer;
 }
